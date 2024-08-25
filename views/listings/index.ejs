@@ -1,0 +1,37 @@
+
+<% layout('./layout/boilerplate') -%>
+
+  <body>
+    <div class="fixed-btn">
+      <form method="GET" action="/listings/new" class="new-btn">
+        <button class="plus-btn">+</button>
+      </form>
+    </div>
+
+    <main>
+      <div class="main"  style="margin-top: 3rem;">
+        <div class="cards">
+          <% for(let listing of allListings) { %>
+            <div class="car1" data-aos="zoom-out-up" data-aos-duration="2000">
+              <a href="/listings/<%= listing._id %>" class="list">
+                <div class="profile" id="boys">
+                  <img src="<%=listing.image.url%>" alt="">
+                </div>
+                <div class="desc">
+                  <h4>
+                    <%= listing.title %>
+                  </h4>
+                  <p>
+                    &#8377;<%= listing.price %>
+                  </p>
+                </div>
+            </div>
+            </a>
+            <% } %>
+        </div>
+
+      </div>
+
+    </main>
+  </body>
+  <!-- </html> -->

@@ -1,0 +1,23 @@
+.footer {
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid gray;
+  padding: 10px;
+}
+
+.footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  /* width: 100%; */
+  /* position: absolute; */
+  /* bottom: 0px; */
+  /* left: 0; */
+  /* width: 100%; */
+  background: #000;
+
+}

@@ -1,0 +1,39 @@
+<% layout('./layout/boilerplate') -%>
+
+  <body>
+    <main>
+      <div class="main-new">
+
+        <form action="/signup" method="post" class=" form needs-validation" novalidate>
+
+          <h1 style="font-weight: 700;">SignUp On Wondrlust</h1>
+
+          <div class="title mt-3">
+            <label for="username">Username</label><br>
+            <input type="text" name="username" id="username" placeholder="Nick Jhon" required>
+            <div class="valid-feedback ">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              title Should be required.
+            </div>
+          </div>
+          <div class="title mt-3">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email"  required>
+          </div>
+          <div class="location mt-3">
+            <label for="location">Location</label><br>
+            <input type="text" name="location" id="location" >
+          </div>
+          <div class="password mt-3">
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="btns mt-3" >
+            <button class="btn btn-success"> SignUp</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>

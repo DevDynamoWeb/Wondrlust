@@ -1,0 +1,36 @@
+
+<% if(success && success.length) { %> 
+<script>
+  Swal.fire({
+      position: "top-center",
+      icon: "success",
+      title: "<%= success %>",
+      showConfirmButton: false,
+      timer: 2000
+    });
+</script>
+<% } %>
+
+<% if(error && error.length) { %>
+  <script>
+    Swal.fire({
+      position: "top-center",
+      icon: "error",
+      title: "<%= error %>",
+      showConfirmButton: false,
+      timer: 2000
+    });
+  </script>
+  <% } %>
+
+<% if(loggedErr && loggedErr.length) { %>
+  <script>
+    Swal.fire({
+      position: "top-center",
+      icon: "error",
+      title: "<%= loggedErr %>",
+      showConfirmButton: false,
+      timer: 2000
+    });
+  </script>
+  <% } %>

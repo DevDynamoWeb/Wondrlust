@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wanderlust </title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo-box">
+        <h1 class="logo" style="font-weight: 900;"> WondrLust </h1>
+      </div>
+      <div class="humbtn" style="display: none;">
+        <button>|||</button>
+      </div>
+      <div class="menus">
+        <a href="/listings">Home</a>
+        <a href="/listings">All Listing</a>
+        <a href="/listings/new">Add new listing </a>
+      </div>
+      <div class="menus">
+        <% if(!currUser){%>
+          <a href="/signup">Signup</a>
+          <a href="/login"> Login</a>
+          <%} %>
+
+            <% if(currUser){%>
+              <div>
+                <a style="font-weight: 500; color: black; text-align: center;">
+                  <i class="fa-regular fa-user"></i> 
+                  <%=currUser.username%>
+                </a>
+              
+                <a href="/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+                <%} %>
+              </div>
+
+      </div>
+    </nav>
+  </header>
+</body>
+
+</html>
